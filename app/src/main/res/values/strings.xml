@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Email</string>
+    <string name="retry">Retry</string>
+    <string name="create_email">Create Email</string>
+    <string name="connectivity_loss_error">Something went wrong</string>
+    <string name="no_internet_connection">No Internet connection</string>
+    <string name="connectivity_loss_message">Please check your internet connection and try again.</string>
+
+</resources>

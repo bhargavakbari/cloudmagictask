@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_from_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From"
+            android:textColor="@color/gray_16"
+            android:textSize="18sp"
+            android:layout_marginLeft="3dp"/>
+
+        <EditText
+            android:id="@+id/et_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="bhragavakbari009@gmail.com"
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_from_info_container"
+        android:background="@color/gray_57"/>
+    <LinearLayout
+        android:id="@+id/ll_to_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:layout_below="@+id/divider_view"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To"
+            android:textColor="@color/gray_16"
+            android:textSize="18sp"
+            android:layout_marginLeft="3dp"/>
+
+        <EditText
+            android:id="@+id/et_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="cloudmagic@gmail.com"
+            android:textColor="@color/black"
+            android:layout_marginLeft="35dp"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_to_info_container"
+        android:background="@color/gray_57"/>
+    <LinearLayout
+        android:id="@+id/ll_subject_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:layout_below="@+id/divider_view1"
+        android:gravity="center_vertical">
+        <EditText
+            android:id="@+id/et_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Subject"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_subject_container"
+        android:background="@color/gray_57"/>
+    <LinearLayout
+        android:id="@+id/ll_email_body_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:layout_below="@+id/divider_view2"
+        android:gravity="center_vertical">
+        <EditText
+            android:id="@+id/et_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Compose email"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_send_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send email"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/bg_blue_white_ripple"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
